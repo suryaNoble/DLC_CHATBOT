@@ -1,6 +1,3 @@
-// Developed and implemented by Swayam Swarup Panda for the Digital Literacy Campaign
-// Anyone can use this to teach digital tools in a simple, interactive way
-
 // DOM Elements
 const chatMessages = document.getElementById("chatMessages");
 const userInput = document.getElementById("userInput");
@@ -88,9 +85,6 @@ function displayBotMessage(message, steps = []) {
 
       messageElement.appendChild(stepsContainer);
     }
-
-    // Developed and implemented by Swayam Swarup Panda for the Digital Literacy Campaign
-    // Anyone can use this to teach digital tools in a simple, interactive way
 
     // Add timestamp
     const timestamp = document.createElement("div");
@@ -196,9 +190,6 @@ function findBestMatch(query) {
   return highestScore > 0.3 ? bestMatch : null;
 }
 
-// Developed and implemented by Swayam Swarup Panda for the Digital Literacy Campaign
-// Anyone can use this to teach digital tools in a simple, interactive way
-
 // Calculate match score between query and question
 function calculateMatchScore(query, question) {
   // Simple matching algorithm based on keyword presence
@@ -288,6 +279,3 @@ function getFormattedTime() {
 
 // Initialize chatbot when page loads
 window.addEventListener("load", initChatbot);
-
-// Developed and implemented by Swayam Swarup Panda for the Digital Literacy Campaign
-// Anyone can use this to teach digital tools in a simple, interactive way

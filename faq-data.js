@@ -1,7 +1,4 @@
-// Developed and implemented by Swayam Swarup Panda for the Digital Literacy Campaign
-// Anyone can use this to teach digital tools in a simple, interactive way
-
-// FAQ Data with tutorials for digital tools
+// FAQ Data
 const faqData = {
   whatsapp: {
     "What is WhatsApp?": {
@@ -129,9 +126,6 @@ const faqData = {
     },
   },
 
-  // Developed and implemented by Swayam Swarup Panda for the Digital Literacy Campaign
-  // Anyone can use this to teach digital tools in a simple, interactive way
-
   googlemaps: {
     "What is Google Maps?": {
       answer:
@@ -233,13 +227,10 @@ const faqData = {
   },
 };
 
-// Suggestion topics to show
 const suggestionTopics = [
   "How do I send a photo on WhatsApp?",
   "How do I add money to Paytm wallet?",
   "How do I find directions on Google Maps?",
   "How can I stay safe online?",
+  "What does digital literacy mean?",
 ];
-
-// Developed and implemented by Swayam Swarup Panda for the Digital Literacy Campaign
-// Anyone can use this to teach digital tools in a simple, interactive way
