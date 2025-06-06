@@ -1,0 +1,269 @@
+/* Developed and implemented by Swayam Swarup Panda for the Digital Literacy Campaign */
+/* Anyone can use this to teach digital tools in a simple, interactive way */
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+/* Chatbot Container */
+.chatbot-container {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+}
+
+/* Chatbot Header */
+.chatbot-header {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+}
+
+.chatbot-logo {
+  font-size: 28px;
+  margin-right: 15px;
+}
+
+.chatbot-title h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.chatbot-title p {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+/* Chat Messages Area */
+.chat-messages {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Message Bubbles */
+.message {
+  max-width: 80%;
+  padding: 12px 15px;
+  border-radius: 18px;
+  margin-bottom: 5px;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.bot-message {
+  background-color: #f0f2f5;
+  align-self: flex-start;
+  border-bottom-left-radius: 5px;
+}
+
+.user-message {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 5px;
+}
+
+.timestamp {
+  font-size: 10px;
+  margin-top: 5px;
+  opacity: 0.7;
+}
+
+.bot-message .timestamp {
+  text-align: left;
+}
+
+.user-message .timestamp {
+  text-align: right;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Developed and implemented by Swayam Swarup Panda for the Digital Literacy Campaign */
+/* Anyone can use this to teach digital tools in a simple, interactive way */
+
+/* Chat Input Area */
+.chat-input {
+  display: flex;
+  padding: 15px;
+  background-color: #f5f7fa;
+  border-top: 1px solid #e6e6e6;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+}
+
+.chat-input button {
+  border: none;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-input button:hover {
+  transform: scale(1.05);
+}
+
+/* Steps Styling */
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.step {
+  display: flex;
+  gap: 10px;
+}
+
+.step-number {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.step-content {
+  flex-grow: 1;
+}
+
+/* Suggestion Chips */
+.suggestion-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px 15px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.chip {
+  background-color: #f0f2f5;
+  padding: 8px 15px;
+  border-radius: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.chip:hover {
+  background-color: #e0e2e5;
+}
+
+/* Typing Indicator */
+.typing-indicator {
+  display: flex;
+  gap: 5px;
+  padding: 10px;
+  align-self: flex-start;
+}
+
+.typing-indicator span {
+  width: 8px;
+  height: 8px;
+  background-color: #b6b9bc;
+  border-radius: 50%;
+  display: inline-block;
+  animation: typing 1.5s infinite ease-in-out;
+}
+
+.typing-indicator span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-indicator span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typing {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f7fa;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c5c8ce;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a5a8ae;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 500px) {
+  .container {
+    padding: 10px;
+  }
+
+  .chatbot-container {
+    height: 90vh;
+  }
+}
+
+/* Developed and implemented by Swayam Swarup Panda for the Digital Literacy Campaign */
+/* Anyone can use this to teach digital tools in a simple, interactive way */
