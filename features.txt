@@ -1,0 +1,30 @@
+Features:
+
+*Smart Interface
+
+Animated message bubbles (fade-in + slight lift)
+
+Typing indicator (3 bouncing dots)
+
+Quick-reply suggestion chips
+
+Visual Feedback
+
+Status lights (green=online, yellow=typing, red=offline)
+
+Input field glow on focus
+
+Pulsing badge for new messages
+
+
+Mobile-responsive design (flexible units + media queries)
+
+Tech Tools used:
+
+CSS transitions for smooth hover/press effects
+
+z-index layering for floating elements
+
+Optimized performance with will-change property
+
+300ms response time target for all interactions
